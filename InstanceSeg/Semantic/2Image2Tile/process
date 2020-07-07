@@ -1,0 +1,12 @@
+
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS1__L1A0001064454-MSS1_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset1
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS1__L1A0001118839-MSS1_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset2
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS1__L1A0001395956-MSS1_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset3
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS1__L1A0001680858-MSS1_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset4
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS2__L1A0000718813-MSS2_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset5
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS2__L1A0001378501-MSS2_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset6
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS2__L1A0001471436-MSS2_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset7
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS2__L1A0001517494-MSS2_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset8
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS2__L1A0001787564-MSS2_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset9
+bash clip_train_label.sh /data/SegAttention/datasets/Landcover/Fine_Land-cover_Classification_15classes/label_15classes/GF2_PMS2__L1A0001821754-MSS2_label_calc.tif /data/SegAttention/datasets/Landcover/label/ 513 Subset10
+
