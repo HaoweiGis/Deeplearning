@@ -2,8 +2,7 @@ import argparse
 import glob
 import os.path as osp
 
-import cityscapesscripts.helpers.labels as CSLabels
-import mmcv
+# import mmcv
 import numpy as np
 import pycocotools.mask as maskUtils
 
@@ -83,8 +82,8 @@ def img2coco(ROOT_DIR):
     segmentation_id = 1
 
     # filter for jpeg images
-    IMAGE_DIR = os.path.join(ROOT_DIR, "image")
-    ANNOTATION_DIR = os.path.join(ROOT_DIR, "label")
+    IMAGE_DIR = os.path.join(ROOT_DIR, "shapes_train2018")
+    ANNOTATION_DIR = os.path.join(ROOT_DIR, "shapes_train2018")
     for root, _, files in os.walk(IMAGE_DIR):
         image_files = filter_for_jpeg(root, files)
 
@@ -145,8 +144,8 @@ def main():
     mmcv.mkdir_or_exist(out_dir)
 
     set_name = dict(
-        # train='instancesonly_filtered_train.json',
-        val='instancesonly_filtered_val.json',
+        train='instancesonly_filtered_train.json',
+        # val='instancesonly_filtered_val.json',
         # test='instancesonly_filtered_test.json'
         )
 
