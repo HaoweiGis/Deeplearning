@@ -16,7 +16,6 @@ def parse_args():
     args = parser.parse_args()
     return args
 
-
 def collect_files(img_dir):
     suffix = 'sample.tif'
     files = []
