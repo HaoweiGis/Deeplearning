@@ -2,7 +2,7 @@ import argparse
 import glob
 import os.path as osp
 
-import cityscapesscripts.helpers.labels as CSLabels
+# import cityscapesscripts.helpers.labels as CSLabels
 import mmcv
 import numpy as np
 import pycocotools.mask as maskUtils
@@ -19,7 +19,7 @@ import cococreate as pycococreatortools
 
 
 INFO = {
-    "description": "Building Dataset",
+    "description": "Water Dataset",
     "version": "0.1.0",
     "year": 2020,
     "contributor": "HaoweiGis",
@@ -37,7 +37,7 @@ LICENSES = [
 CATEGORIES = [
     {
         'id': 1,
-        'name': 'building',
+        'name': 'water',
         'supercategory': 'shape',
     }]
 
@@ -102,7 +102,7 @@ def img2coco(ROOT_DIR):
                 # go through each associated annotation
                 for annotation_filename in annotation_files:
                     
-                    if 'building' in annotation_filename:
+                    if 'gt' in annotation_filename:
                         class_id = 1
                     # elif 'circle' in annotation_filename:
                     #     class_id = 2
@@ -147,7 +147,7 @@ def main():
     set_name = dict(
         train='instancesonly_filtered_train.json',
         val='instancesonly_filtered_val.json',
-        test='instancesonly_filtered_test.json'
+        # test='instancesonly_filtered_test.json'
         )
 
     for split, json_name in set_name.items():
